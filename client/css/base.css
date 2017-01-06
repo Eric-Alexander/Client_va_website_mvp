@@ -1,0 +1,125 @@
+header img{
+  width:40%;
+  margin: 2% 0 0 2%;
+  float: left;
+}
+/*----------BLOC-1--------*/
+.bloc-1{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.b_collection{
+  height: auto;
+  text-align: center;
+}
+.b_collection ul{
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.b_collection ul li{
+  list-style: none;
+  float: left;
+  text-align: center;
+  display: inline-block;
+  width: 25%;
+}
+.b_collection a{
+  text-decoration: none;
+}
+
+/*----------BLOC-2--------*/
+.bloc-2{
+  padding: 2% 0;
+  /*width: 100% !important;*/
+  background-color: teal;
+  text-align: center;
+}
+/*----------BLOC-3--------*/
+.bloc-3{
+  padding: 4% 0;
+  background-color: olive;
+  text-align: center;
+}
+/*----------BLOC-4--------*/
+.bloc-4{
+  padding: 2% 0;
+  background-color: pink;
+  text-align: center;
+}
+.bloc-4 ul{
+  padding: 0;
+  /*margin: 0 35%;*/
+  list-style-type: none;
+  /*list-style-position: inside;*/
+
+}
+.bloc-4 img{
+  max-width: 60%;
+}
+/*----------BLOC-5--------*/
+.bloc-5{
+  padding: 4% 0;
+  background-color: orange;
+  text-align: center;
+}
+.bloc-5 ul{
+  padding: 0;
+  /*margin: 0 35%;*/
+  list-style-type: none;
+  /*list-style-position: inherit;*/
+  /*list-style-position: inside;*/
+
+}
+/*----------BLOC-6--------*/
+.bloc-6{
+  padding: 4% 0;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+}
+
+.row-1{
+  margin: 0 3% 0 3%;
+  width: 94%;
+  min-height:auto;
+  background: #fff;
+  display: inline-block;
+  text-align: center;
+  position: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.row-1 img{
+  vertical-align: middle;
+  padding: 0 10px 0 10px;
+  /*max-width: 90%;*/
+}
+
+footer{
+  text-align: center !important;
+}
+
+
+
+/*----------guests.html*------------*/
+.guests{
+  background-image: url('../img/guestline.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width:98%;
+  /*height:0 auto;*/
+  margin: 0 auto;
+
+
+}
+.slides{
+  text-align: center;
+  /*max-width: 90%;*/
+}
+.slides img{
+  padding: 5% 0;
+  max-width: 98%;
+
+}

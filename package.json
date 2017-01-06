@@ -1,0 +1,14 @@
+{
+  "name": "initializr",
+  "version": "1.0.0",
+  "description": "va website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eric Goetschel",
+  "license": "ISC",
+  "dependencies": {
+    "h5bp": "^0.1.4"
+  }
+}
