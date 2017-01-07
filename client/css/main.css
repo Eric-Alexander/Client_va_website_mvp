@@ -1,4 +1,5 @@
 @import url('base.css');
+@import url('animate.css');
 
 
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
@@ -69,25 +70,28 @@ body {
 }
 
 /* ===================
-    ALL: Orange Theme
+    ALL: Blue Theme
    =================== */
 
 .header-container {
-    /*border-bottom: 20px solid #e44d26;*/
+    padding-bottom: 20px;
+    border-bottom: 20px solid #497DB1;
 }
 
 .main aside {
-    border-top: 20px solid #e44d26;
+    border-top: 20px solid #C3D2E3;
 }
 
 .header-container,
-.footer-container,
 .main aside {
-    background: teal;
+    background: #fff;
+}
+.footer-container{
+  background: #497DB1;
 }
 
 .title {
-    color: white;
+    color: #fff;
 }
 
 /* ==============
@@ -101,33 +105,53 @@ nav ul {
 }
 
 nav a {
+  background-image: -webkit-gradient(
+	linear,
+	left top,
+	left bottom,
+	color-stop(0, #C5CFE4),
+	color-stop(1, #A69BCC)
+  );
+    background-image: -o-linear-gradient(bottom, #C5CFE4 0%, #A69BCC 100%);
+    background-image: -moz-linear-gradient(bottom, #C5CFE4 0%, #A69BCC 100%);
+    background-image: -webkit-linear-gradient(bottom, #C5CFE4 0%, #A69BCC 100%);
+    background-image: -ms-linear-gradient(bottom, #C5CFE4 0%, #A69BCC 100%);
+    background-image: linear-gradient(to bottom, #C5CFE4 0%, #A69BCC 100%);
     display: block;
     margin-bottom: 10px;
     padding: 15px 0;
+    border-radius: 6px;
 
     text-align: center;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.25em;
 
-    color: white;
-    background: #e44d26;
+    /*color: #234067;
+    background: #C3D2E3;*/
 }
 
 nav a:hover,
 nav a:visited {
-    color: white;
+    color: #234067;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
+.icons img { transition: all 0.2s ease-in-out; }
+.icons img:hover{
+  transform: scale(1.1);
+}
 
 /* ==============
     MOBILE: Main
    ============== */
-
+header img{
+  width: 90%;
+}
 .main {
-    padding: 30px 0;
+    /*padding: 30px 0;*/
 }
 
 .main article h1 {
@@ -156,7 +180,9 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
-
+.icons img{
+  padding-top: 6%;
+}
 
 
 
@@ -179,7 +205,9 @@ nav a:hover {
 /* ====================
     INTERMEDIATE: Menu
    ==================== */
-
+   header img{
+     width: 60%;
+   }
     nav a {
         float: left;
         width: 27%;
@@ -194,6 +222,21 @@ nav a:hover {
 
     nav li:last-child a {
         margin-right: 0;
+    }
+
+    .col-1{
+        margin: 0 1.5% 0 1.5%;
+        width: 45%;
+        min-height:auto;
+        display: inline-block;
+        vertical-align: top;
+      }
+    .col-2{
+      margin: 0 1.5% 0 1.5%;
+      width: 45%;
+      min-height: auto;
+      display: inline-block;
+      vertical-align: top;
     }
 
 
@@ -215,6 +258,9 @@ nav a:hover {
 /* ====================
     WIDE: CSS3 Effects
    ==================== */
+   header img{
+     width: 40%;
+   }
 
     .header-container,
     .main aside {
@@ -222,10 +268,129 @@ nav a:hover {
            -moz-box-shadow: 0 5px 10px #aaa;
                 box-shadow: 0 5px 10px #aaa;
     }
+    .col-1{
+        margin:0 2%;
+        /*padding-left: 150px;*/
+        /*width: 195px;*/
+        min-height:auto;
+        display: inline-block;
+        vertical-align: top;
+      }
+
+    .col-2{
+      margin: 0 2%;
+      /*padding-right: 150px;*/
+      /*width: 195px;*/
+      min-height: auto;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .col-3{
+      margin: 0 25%;
+      /*width: 25%;*/
+    }
+
+    .row-profile{
+      margin: 0 10% 0 10%;
+      width: 80%;
+      min-height:auto;
+      background: #fff;
+      display: inline-block;
+      text-align: center;
+      position: center;
+      /*padding-bottom: 10px;
+      padding-top: 10px;*/
+    }
+    .row-profile img{
+      vertical-align: middle;
+      max-width: 220px;
+      padding: 2%;
+
+    }
 
 /* ============
     WIDE: Menu
    ============ */
+
+   @media only screen and (min-width: 1000px){
+     /*.col-1 p{
+       position: absolute;
+       left: 5%;
+
+     }*/
+     .col-1{
+         margin:0 2%;
+         padding-left: 150px;
+         width: 195px;
+         min-height:auto;
+         display: inline-block;
+         vertical-align: top;
+       }
+       .col-1 img{
+         margin: 4% 0;
+       }
+       /*.col-1-row-1{
+         width: 400px;
+       }
+       .col-1-row-1 img{
+         float:left;
+       }
+       .col-1-row-1 p{
+         padding-top: 28%;
+       }
+       .col-1-row-2{
+         width: 400px;
+         position: right;
+       }
+       .col-1-row-2 img{
+         float:left;
+       }
+       .col-1-row-2 p{
+         padding-top: 54%;
+       }*/
+
+     .col-2{
+       margin: 0 2%;
+       padding-right: 150px;
+       width: 195px;
+       min-height: auto;
+       display: inline-block;
+       vertical-align: top;
+     }
+     .col-2 img{
+       margin: 4% 0;
+     }
+     .col-1 p{
+       margin-bottom: 40px;
+     }
+
+     /*.col-2-row-1{
+       width: 400px;
+       position: left;
+     }
+     .col-2-row-1 img{
+       float:left;
+     }
+     .col-2-row-1 p{
+       padding-top: 28%;
+     }
+     .col-2-row-2{
+       width: 400px;
+       position: left;
+     }
+     .col-2-row-2 img{
+       float:left;
+     }
+     .col-2-row-2 p{
+       padding-top: 54%;
+     }*/
+
+     .icons > .col-3 img{
+       padding-top: 5px !important;
+     }
+
+   }
 
     .title {
         float: left;
@@ -315,6 +480,7 @@ nav a:hover {
 .clearfix:after {
     content: " ";
     display: table;
+    margin-top: 0;
 }
 
 .clearfix:after {

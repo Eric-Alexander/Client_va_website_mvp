@@ -24,6 +24,10 @@ app.get('/guests', function(req, res) {
 
     res.redirect('guests.html');
 });
+app.get('/about', function(req, res) {
+
+    res.redirect('about.html');
+});
 // Setting Server to Listen on Port: 8000
 app.listen(3000, function() {
     console.log("listening on port 3000");
